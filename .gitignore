@@ -1,0 +1,31 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated large datasets
+data/generated/
+
+# Runtime logs
+reports/logs/
+
+# Ignore generated run reports
+reports/run_metrics_*.json
+reports/reconciliation_*.csv
+
+# Keep sample success and failure reports
+!reports/run_metrics_e063f26e-872d-4b3e-80a5-fa693ac3c53a.json
+!reports/run_metrics_325ff42f-a8c3-47a0-b812-36b70862906e.json
+!reports/reconciliation_e063f26e-872d-4b3e-80a5-fa693ac3c53a.csv
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+!reports/run_metrics_3d78f0b6-9a02-48a5-aa71-1cc585536a6e.json
+!reports/reconciliation_3d78f0b6-9a02-48a5-aa71-1cc585536a6e.csv

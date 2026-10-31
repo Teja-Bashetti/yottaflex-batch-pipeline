@@ -1,0 +1,4 @@
+customer_id,customer_name,email,city,reject_reason
+C102,Duplicate,duplicate@gmail.com,Delhi,Duplicate customer_id
+,Unknown,unknown@gmail.com,Kolkata,customer_id is null or empty
+C106,Invalid Email,bad-email,Delhi,Invalid email format

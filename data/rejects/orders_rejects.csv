@@ -1,0 +1,5 @@
+order_id,customer_id,order_date,amount,order_status,reject_reason
+O101,C101,2026-10-28,1000,COMPLETED,Duplicate order_id
+O107,C999,2026-10-28,1500,COMPLETED,Customer ID does not exist
+O108,C101,2026-10-28,-500,COMPLETED,Amount must be greater than zero
+O109,C101,invalid-date,2000,PENDING,Invalid order_date

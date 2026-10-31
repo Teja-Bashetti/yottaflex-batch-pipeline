@@ -1,0 +1,3 @@
+dataset,input_records,accepted_records,rejected_records
+customers,8,5,3
+orders,10,6,4

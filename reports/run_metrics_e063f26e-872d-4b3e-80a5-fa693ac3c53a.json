@@ -1,0 +1,26 @@
+{
+    "run_id": "e063f26e-872d-4b3e-80a5-fa693ac3c53a",
+    "start_time": "2026-10-31T08:21:02.835768+00:00",
+    "end_time": "2026-10-31T08:21:02.901773+00:00",
+    "duration_seconds": 0.066,
+    "status": "SUCCESS",
+    "input_files": {
+        "customers": "data/input/customers.csv",
+        "orders": "data/input/orders.csv"
+    },
+    "output_files": {
+        "customers": "data/output/curated_customers.csv",
+        "orders": "data/output/curated_orders.csv"
+    },
+    "reject_files": {
+        "customers": "data/rejects/customers_rejects.csv",
+        "orders": "data/rejects/orders_rejects.csv"
+    },
+    "error_count": 0,
+    "customers_received": 8,
+    "customers_accepted": 5,
+    "customers_rejected": 3,
+    "orders_received": 10,
+    "orders_accepted": 6,
+    "orders_rejected": 4
+}

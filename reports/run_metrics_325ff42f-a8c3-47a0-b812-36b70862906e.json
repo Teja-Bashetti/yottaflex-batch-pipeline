@@ -1,0 +1,27 @@
+{
+    "run_id": "325ff42f-a8c3-47a0-b812-36b70862906e",
+    "start_time": "2026-10-31T08:23:03.813512+00:00",
+    "end_time": "2026-10-31T08:23:03.816984+00:00",
+    "duration_seconds": 0.003,
+    "status": "FAILED",
+    "input_files": {
+        "customers": "data/input/missing_customers.csv",
+        "orders": "data/input/orders.csv"
+    },
+    "output_files": {
+        "customers": "data/output/curated_customers.csv",
+        "orders": "data/output/curated_orders.csv"
+    },
+    "reject_files": {
+        "customers": "data/rejects/customers_rejects.csv",
+        "orders": "data/rejects/orders_rejects.csv"
+    },
+    "error_count": 1,
+    "customers_received": 0,
+    "customers_accepted": 0,
+    "customers_rejected": 0,
+    "orders_received": 0,
+    "orders_accepted": 0,
+    "orders_rejected": 0,
+    "error": "Traceback (most recent call last):\n  File \"C:\\Users\\LENOVO\\yottaflex-batch-pipeline\\src\\main.py\", line 92, in run_pipeline\n    read_customers_with_rejects(customers_file)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\LENOVO\\yottaflex-batch-pipeline\\src\\ingestion.py\", line 62, in read_customers_with_rejects\n    raise FileNotFoundError(\n        f\"Customers file not found: {file_path}\"\n    )\nFileNotFoundError: Customers file not found: data\\input\\missing_customers.csv\n"
+}
