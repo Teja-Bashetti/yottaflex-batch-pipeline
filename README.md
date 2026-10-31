@@ -239,6 +239,24 @@ Both datasets passed reconciliation checks.
 - Introduce DuckDB-based analytical processing.
 - Add automated CI/CD integration.
 - Extend the pipeline for larger datasets and cloud storage.
+## Performance Benchmark
+
+The batch pipeline was tested using 100,000 customer records and 100,000 order records (200,000 total input records).
+
+| Metric | Before Optimization | After Optimization |
+|---|---:|---:|
+| Validation iteration method | `iterrows()` | `itertuples()` |
+| Total input records | 200,000 | 200,000 |
+| Execution time | 64.285 seconds | 41.136 seconds |
+| Pipeline status | SUCCESS | SUCCESS |
+
+**Performance improvement:** The optimized implementation reduced execution time by approximately **36.02%**, saving around **23.15 seconds** in this benchmark.
+
+### Optimization applied
+
+Replaced Pandas `iterrows()` with `itertuples()` in the validation logic to reduce row-iteration overhead.
+
+Both benchmark runs processed all 100,000 customers and 100,000 orders successfully, with zero rejected records.
 
 ## 15. Disclaimer
 
